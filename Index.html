@@ -1,0 +1,21 @@
+
+<!-- index.html -->
+<div class="crypto-box">
+  <h3>TRON Wallet Checker</h3>
+ 
+  <!-- Address Input and Button -->
+  <div class="input-group">
+    <input type="text" id="walletInput" placeholder="Enter TRON Wallet Address (e.g., T...)" />
+    <button id="fetchBtn">Check Balance</button>
+  </div>
+ 
+  <!-- Visual loading states and content areas -->
+  <div id="loader" style="display: none;">Searching the blockchain...</div>
+  <div id="resultCard" style="display: none;" class="card">
+    <p><strong>Address:</strong> <span id="resAddress"></span></p>
+    <p><strong>TRX Balance:</strong> <span id="resBalance"></span> TRX</p>
+    <p><strong>Account Created:</strong> <span id="resCreated"></span></p>
+  </div>
+  <div id="errorMessage" style="color: red;"></div>
+</div>
+ 
